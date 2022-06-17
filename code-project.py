@@ -5,6 +5,5 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Simple Prediction App for Laptop Price Range
-This app predicts the **PRICE RANGE** OF LAPTOP!
-""")
+This app lets user choose a few classification methods to predict laptop price ranges based on multiple predictors""")
 
