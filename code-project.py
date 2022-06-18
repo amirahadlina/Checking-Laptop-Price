@@ -51,4 +51,4 @@ if st.button("Submit"):
 
   prediction = laptop.predict(Xnew)[0]
   
-  st.write(f"Your laptop's price is {predicted}")
+  st.write(f"Your laptop's price is {prediction}")
