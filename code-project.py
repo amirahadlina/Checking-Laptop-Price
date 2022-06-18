@@ -22,4 +22,6 @@ ram_GB = st.radio("Choose your RAM",["4GB","8GB","16GB","32GB"])
 ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"])
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
+
+if brand = 'HP': (processor = 'MediaTek', processor_name = 'MediaTek')
              
