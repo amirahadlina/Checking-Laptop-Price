@@ -26,6 +26,8 @@ ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
+def price = 
+
 clicked = st.button("Submit")
 
-price = clicked(df['latest_price'])
+clicked = 
