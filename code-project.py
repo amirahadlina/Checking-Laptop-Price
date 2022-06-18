@@ -11,7 +11,9 @@ This app let user predict their laptop price based on multiple specs preferences
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 from sklearn.preprocessing import LabelEncoder
 
-st.write(df['brand'].unique())
+#st.write(df['brand'].unique())
+
+st.write(df.sort_values(df['brand].unique(),ascending = False))
 labelencoder = LabelEncoder()
 df['brand'] = labelencoder.fit_transform(df['brand'])
 df['processor_brand'] = labelencoder.fit_transform(df['processor_brand'])
