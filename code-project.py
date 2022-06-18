@@ -44,19 +44,19 @@ ssd = st.radio("Pick your storage(ssd)",[32,128,256,512,1024])
 hdd = st.radio("Pick your storage(hdd)",[512,1024,2048])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
-#brand = st.selectbox("Choose your brand", [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19])
-#processor_brand = st.selectbox("Choose your Processor Brand", [0,1,2,3,4])
-#processor_name = st.selectbox("Choose your Processor Name",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
-#weight = st.radio("Pick your laptop's weight",[0,1,2])
+brand = st.selectbox("Choose your brand", [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19])
+processor_brand = st.selectbox("Choose your Processor Brand", [0,1,2,3,4])
+processor_name = st.selectbox("Choose your Processor Name",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
+weight = st.radio("Pick your laptop's weight",[0,1,2])
 
 #if brand == 'acer':
  # brand = 0
 #elif brand == 'ALIENWARE':
  # brand = 1
   
-#abc = pd.DataFrame({"choices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']})
+abc = pd.DataFrame({"choices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']})
                      
-#st.table(abc)
+st.table(abc)
 
 if st.button("Submit"):
   Xnew = pd.DataFrame([[brand,processor_brand,processor_name,ram_gb,ssd,hdd,weight]],
