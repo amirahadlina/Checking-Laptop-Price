@@ -16,6 +16,7 @@ def explore_data(dataset):
 
 data = explore_data(my_dataset)
 
+
 st.header('Choose Your Specs Here')
 brand = st.selectbox("Choose your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
 processor = st.selectbox("Choose your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"])
@@ -25,5 +26,6 @@ ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
+clicked = st.button("Submit")
 
-             
+price = clicked(df['latest_price'])
