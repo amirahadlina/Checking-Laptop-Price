@@ -10,8 +10,8 @@ This app let user predict their laptop price based on multiple specs preferences
 
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 
-X = pd.df(Cleaned_Laptop_data_newest.data, columns = ['brand','processor','processor_name','ram_GB','ssd','hdd','weight'])
-Y = pd.df(Cleaned_Laptop_data_newest.target, columns = ['latest_price'])
+X = df['brand','processor','processor_name','ram_GB','ssd','hdd','weight']
+Y = df['latest_price']
 
 from sklearn.model_selection import train_test_split
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size = 0.2, random_state = 999)
