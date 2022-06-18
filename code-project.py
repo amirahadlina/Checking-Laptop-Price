@@ -33,5 +33,3 @@ X = pd.df(Cleaned_Laptop_data_newest.dataset, columns = ('brand','processor','pr
 Y = pd.df(Cleaned_Laptop_data_newest.target, columns = ['latest_price'])
 
 clicked = st.button("Submit")
-
-clicked = 
