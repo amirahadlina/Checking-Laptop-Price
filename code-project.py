@@ -19,3 +19,6 @@ st.header('Choose Your Specs Here')
 
 brand = st.selectbox("Choose your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
 
+st.header('Choose Your Processor Brand')
+processor = if st.selectbox("Choose your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"]
+                            st.selectbox("Intel",["Core i3"])
