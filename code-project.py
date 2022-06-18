@@ -16,6 +16,7 @@ y = df['latest_price']
 from sklearn.model_selection import train_test_split
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size = 0.2, random_state = 999)
 
+from sklearn.svm import SVC
 laptop = SVC()
 laptop.fit(Xtrain, ytrain)
 ypred = laptop.predict(Xtest)
