@@ -42,7 +42,7 @@ weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
 if st.button("Submit"):
   Xnew = pd.DataFrame([[brand,processor_brand,processor_name,ram_gb,ssd,hdd,weight]],
-                      column = ["brand","processor_brand","processor_name","ram_gb","ssd","hdd","weight"])
+                      columns = ["brand","processor_brand","processor_name","ram_gb","ssd","hdd","weight"])
 
   prediction = laptop.predict(Xnew)[0]
   
