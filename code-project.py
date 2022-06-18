@@ -19,5 +19,4 @@ brand = st.selectbox("Choose your brand", ["Lenovo","Avita","HP","acer","ASUS","
 
 st.header('Choose Your Processor Brand')
 processor = st.selectbox("Choose your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"]
-           if st.selectbox ("Intel"):
-                         st.selectbox(data.Intel("Core i3", "Core i5"))
+        
