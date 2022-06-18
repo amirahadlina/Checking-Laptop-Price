@@ -3,6 +3,13 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
-st.write("""
-# Simple Prediction App for Laptop Price Range
-This app lets user choose a few classification methods to predict laptop price ranges based on multiple predictors.""")
+st.title("""
+# Choose Your Specs and Predict Your Laptop Price!
+
+This app let's user predict their laptop price based on multiple specs preferences.""")
+
+st.sidebar.header('Choose Your Specs Here')
+
+def spec_input_features():
+  
+  
