@@ -11,6 +11,7 @@ This app let user predict their laptop price based on multiple specs preferences
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 from sklearn.preprocessing import LabelEncoder
 
+st.write(df['brand'].unique())
 labelencoder = LabelEncoder()
 df['brand'] = labelencoder.fit_transform(df['brand'])
 df['processor_brand'] = labelencoder.fit_transform(df['processor_brand'])
@@ -50,9 +51,9 @@ weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 #elif brand == 'ALIENWARE':
  # brand = 1
   
-abc = pd.DataFrame({"choices":df['brand'],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']}
+#abc = pd.DataFrame({"choices":df['brand'],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']}
                      
-st.table(abc)
+#st.table(abc)
 
 if st.button("Submit"):
   Xnew = pd.DataFrame([[brand,processor_brand,processor_name,ram_gb,ssd,hdd,weight]],
