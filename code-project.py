@@ -17,6 +17,8 @@ df['processor_brand'] = labelencoder.fit_transform(df['processor_brand'])
 df['processor_name'] = labelencoder.fit_transform(df['processor_name'])
 df['weight'] = labelencoder.fit_transform(df['weight'])
 
+st.write(df)
+
 X = df[['brand','processor_brand','processor_name','ram_gb','ssd','hdd','weight']]
 y = df['latest_price']
 
