@@ -25,13 +25,5 @@ ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
-X = Cleaned_Laptop_data_newest['brand','processor_brand','processor_name','ram','ssd','hdd','weight']
-Y = Cleaned_Laptop_data_newest['price']
-
-clf = RandomForestClassifier()
-clf.fit(X, Y)
-
-prediction = clf.predict(df)
-prediction_proba = clf.predict_proba(df)
 
              
