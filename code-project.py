@@ -48,8 +48,8 @@ brand = st.selectbox("Choose your brand", [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
 processor_brand = st.selectbox("Choose your Processor Brand", [0,1,2,3,4])
 processor_name = st.selectbox("Choose your Processor Name",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
 ram_gb = st.radio("Choose your RAM",[4,8,16,32])
-ssd = st.radio("Pick your storage(ssd)",[32,128,256,512,1024])
-hdd = st.radio("Pick your storage(hdd)",[512,1024,2048])
+ssd = st.radio("Pick your storage(ssd)",[0,32,128,256,512,1024])
+hdd = st.radio("Pick your storage(hdd)",[0,512,1024,2048])
 weight = st.radio("Pick your laptop's weight",[0,1,2])
 
 #if brand == 'acer':
