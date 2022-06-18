@@ -50,7 +50,7 @@ weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 #elif brand == 'ALIENWARE':
  # brand = 1
   
-table = pd.DataFrame(df['brand'],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']
+table = pd.DataFrame({"choices":df['brand'],'brand_name':['acer','ALIENWARE','APPLE','ASUS','Avita','DELL','HP','iball','Infinix','Lenovo','LG','Mi','MICROSOFT','MSI','Nokia','realme','RedmiBook','SAMSUNG','Smartron','Vaio']}
                      
 st.table(table)
 
