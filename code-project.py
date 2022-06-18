@@ -16,12 +16,25 @@ def explore_data(dataset):
 
 
 st.header('Choose Your Specs Here')
+if 
 brand = st.selectbox("Choose your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
+else
+if
 processor = st.selectbox("Choose your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"])
+else
+if
 processor_name = st.selectbox("Choose your Processor Name",["Ryzen","Ryzen 3","Ryzen 5","Ryzen 7","Ryzen 9","Quad","Dual core","APU Dual","A6-9225","Athlon Dual","Core i3","Core i5","Core i7","Core i9", "Core m3","Genuine Windows","Plentium Silver","Pentium Quad","GeForce RTX","Hexacore","Everscreenpad","Celeron Dual","MediaTek","SnapDragon","M1"])
+else
+if
 ram_GB = st.radio("Choose your RAM",["4GB","8GB","16GB","32GB"])
+else
+if
 ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"])
+else
+if
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
+else
+if
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
 X = Cleaned_Laptop_data_newest['brand','processor_brand','processor_name','ram','ssd','hdd','weight']
