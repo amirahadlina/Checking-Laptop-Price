@@ -13,7 +13,8 @@ from sklearn.preprocessing import LabelEncoder
 
 #st.write(df['brand'].unique())
 
-st.write(df.sort_values(df['brand].unique(),ascending = False))
+#st.write(df.sort_values(df['brand].unique(),ascending = False))
+st.write(df['brand'].unique().sort())
 labelencoder = LabelEncoder()
 df['brand'] = labelencoder.fit_transform(df['brand'])
 df['processor_brand'] = labelencoder.fit_transform(df['processor_brand'])
