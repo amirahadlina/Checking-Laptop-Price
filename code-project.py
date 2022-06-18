@@ -28,7 +28,7 @@ ssd = st.radio("Pick your storage(ssd)",["32GB","128GB","25GB6","512GB","1024GB"
 hdd = st.radio("Pick your storage(hdd)",["512GB","1024GB","2048GB"])
 weight = st.radio("Pick your laptop's weight",["Casual","ThiNlight","Gaming"])
 
-dataset = explore_data
+df = explore_data
 X = pd.df(Cleaned_Laptop_data_newest.dataset, columns = ('brand','processor','processor_name','ram_GB','ssd','hdd','weight'))
 Y = pd.df(Cleaned_Laptop_data_newest.target, columns = ['latest_price'])
 
