@@ -14,11 +14,10 @@ def explore_data(dataset):
   df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
   return df
 
-
 st.header('Choose Your Specs Here')
-
 brand = st.selectbox("Choose your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
 
 st.header('Choose Your Processor Brand')
 processor = st.selectbox("Choose your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"]
-           if selectbox("intel", ["Core i3", "Core i5"])
+           if st.selectbox ("Intel"):
+                         st.selectbox(data.Intel("Core i3", "Core i5"))
