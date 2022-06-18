@@ -8,8 +8,9 @@ st.title("""
 
 This app let's user predict their laptop price based on multiple specs preferences.""")
 
-st.sidebar.header('Choose Your Specs Here')
+my_dataset = 'Cleaned_Laptop_data_newest.csv'
 
-def spec_input_features():
-  
-  
+def explore_data[dataset]:
+  df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
+
+st.sidebar.header('Choose Your Specs Here')
