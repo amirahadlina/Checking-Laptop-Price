@@ -19,7 +19,7 @@ df['weight'] = labelencoder.fit_transform(df['weight'])
 
 st.write(df)
 
-X = df[['brand','processor_brand','processor_name','ram_gb','ssd','hdd','weight']]
+X = df.drop('latest_price', axis = 1)
 y = df['latest_price']
 
 from sklearn.model_selection import train_test_split
