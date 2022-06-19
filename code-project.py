@@ -10,7 +10,7 @@ This app let you predict your laptop price based on multiple specs preferences."
 
 st.write("The dataset used is based on Kaggle app on this link https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list by Santosh Kumar")
 
-st.write("This App is created by Amirah Adlina ('<a href = "https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list">Here!</a>') with the assitance and guidance of AirAsia Trainers: Dr Yu & Dr Yan Bin")
+st.write("This App is created by Amirah Adlina with the assitance and guidance of AirAsia Trainers: Dr Yu & Dr Yan Bin")
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 from sklearn.preprocessing import LabelEncoder
 
