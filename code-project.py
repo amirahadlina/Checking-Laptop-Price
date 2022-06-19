@@ -34,7 +34,7 @@ laptop = SVC()
 laptop.fit(Xtrain, ytrain)
 ypred = laptop.predict(Xtest)
 
-st.header('Lets Choose Now!')
+st.subheader('Wait...and Take Note!')
 st.caption('Please be informed that your Laptop Brand, Processor Brand, Processor Name and Weight is appear in numerical type, e.g: acer = 0')
 st.caption('Refer to the indicator table below to make your choices')
 
@@ -53,6 +53,8 @@ st.table(three)
 four = pd.DataFrame({"choices":[0,1,2],'processor_brand':['Casual','Gaming','ThiNlight']})
 st.subheader("Laptop Weight")
 st.table(four)
+
+st.header("Lets Choose Now! :)")
 
 #brand = st.selectbox("Your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
 #processor_brand = st.selectbox("Your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"])
