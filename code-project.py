@@ -54,7 +54,7 @@ four = pd.DataFrame({"choices":[0,1,2],'processor_brand':['Casual','Gaming','Thi
 st.subheader("Laptop Weight")
 st.table(four)
 
-st.header("Lets Choose Now! :)")
+st.header("Lets Predict Now!  :)")
 
 #brand = st.selectbox("Your brand", ["Lenovo","Avita","HP","acer","ASUS","DELL","RedmiBook","realme","Infinix","MSI","MICROSOFT","SAMSUNG","Vaio","iball","APPLE","ALIENWARE","Nokia","LG","Smartron","Mi"])
 #processor_brand = st.selectbox("Your Processor Brand", ["Intel","AMD","MediaTek","M1","Qualcomm"])
