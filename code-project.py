@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.title("""
-Choose Your Specs and Predict Your Laptop Price!
+Choose Your Specs and Predict Your Laptop Price On This App
 
 This app let you predict your laptop price based on multiple specs preferences.""")
 
