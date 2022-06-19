@@ -8,6 +8,9 @@ Choose Your Specs and Predict Your Laptop Price On This App
 
 This app let you predict your laptop price based on multiple specs preferences.""")
 
+st.write("The dataset used is based on Kaggle app and the reference of this dataset is on this link https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list by Santosh Kumar")
+
+st.write("This App is created by Amirah Adlina with the assitance of AirAsia Trainers: Dr Yu & Dr Yan Bin")
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 from sklearn.preprocessing import LabelEncoder
 
