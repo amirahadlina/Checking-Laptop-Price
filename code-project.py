@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.title("""
 Choose Your Specs and Predict Your Laptop Price!
 
-This app let user predict their laptop price based on multiple specs preferences.""")
+This app let you predict your laptop price based on multiple specs preferences.""")
 
 df = pd.read_csv("https://raw.githubusercontent.com/amirahadlina/Checking-Laptop-Price/main/Cleaned_Laptop_data_newest.csv")
 from sklearn.preprocessing import LabelEncoder
@@ -101,3 +101,5 @@ if st.button("Submit"):
   prediction = laptop.predict(Xnew)[0]
   
   st.write(f"Your laptop's price is {prediction}")
+  
+  st.caption("The price stated is calculated based on Rupee currency")
