@@ -46,7 +46,7 @@ two = pd.DataFrame({"choices":[0,1,2,3,4],'processor_brand':['AMD','Intel','M1',
 st.subheader("Processor Brand")
 st.table(two)
 
-three = pd.DataFrame({"choices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],'brand_name':['A6-9225 Processor','APU Dual','Athlon','Celeron Dual','Core i3','Core i5','Core i7','Core m3','Dual Core','Ever Screenpad','GeForce GTX','GeForce RTX','Genuine Windows','Hexa Core','M1','MediaTek','Pentium Quad','Pentium Silver','Quad','Ryzen','Ryzen 3','Ryzen 5','Ryzen 7','Ryzen 9','Snapdragon 7c']})
+three = pd.DataFrame({"choices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],'brand_name':['A6-9225 Processor','APU Dual','Athlon','Celeron Dual','Core i3','Core i5','Core i7','Core m3','Dual Core','Ever Screenpad','GeForce GTX','GeForce RTX','Genuine Windows','Hexa Core','M1','MediaTek','Pentium Quad','Pentium Silver','Quad','Ryzen','Ryzen 3','Ryzen 5','Ryzen 7','Ryzen 9','Snapdragon 7c']})
 st.subheader("Processor Name")
 st.table(three)
 
